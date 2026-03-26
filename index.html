@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Super Video Player</title>
+
+    <style>
+        button img {
+            width: 64px;
+            height: 64px;
+        }
+
+        video {
+            width: 400px;
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Super Video Player</h1>
+
+    <video id="video" src="video.mp4"></video>
+    <br><br>
+
+    <!-- TLAČIDLÁ -->
+    <button onclick="playVideo()"><img src="play.png" alt="play"></button>
+    <button onclick="pauseVideo()"><img src="pause.png" alt="pause"></button>
+    <button onclick="stopVideo()"><img src="stop.png" alt="stop"></button>
+    <button onclick="zoomIn()"><img src="zoom_in.png" alt="zoom in"></button>
+    <button onclick="zoomOut()"><img src="zoom_out.png" alt="zoom out"></button>
+    <button onclick="rotateLeft()"><img src="rotate_left.png" alt="rotate left"></button>
+    <button onclick="rotateRight()"><img src="rotate_right.png" alt="rotate right"></button>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
